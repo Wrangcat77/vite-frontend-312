@@ -1,3 +1,7 @@
+import { Modal } from './components/modal'
+import Swiper from 'swiper' // Инициализация слайдера
+import { Navigation, Pagination } from 'swiper/modules' // Инициализация иконок, пагинации и т.д.
+
 // Модалка формы
 const modalForm = new Modal('#modal', '#signup')
 // Модалка навигации в мобилке
@@ -7,6 +11,10 @@ const modalNav = new Modal('#modal-nav', '.burger-menu')
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
+  autoplay: {
+    delay: 2000,
+  },
+  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
