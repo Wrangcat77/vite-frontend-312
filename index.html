@@ -229,96 +229,67 @@
         </dialog>
 
         <main>
-        <!-- таблица  -->
-        <h3>Table</h3>
-        <br>
-        <div class="block">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th>Variation</th>
-                    <th>Result</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Number of characters</td>
-                    <td id="answer1"></td>
-                  </tr>
-                  <tr>
-                    <td>Lower case</td>
-                    <td id="answer2"></td>
-                  </tr>
-                  <tr>
-                    <td>Upper case</td>
-                    <td id="answer3"></td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-
-
-            <h3>Buttons</h3>
+          <h3>Buttons</h3>
             <br>
             <!------------------------------------------------>
             <!--               Button Primary               -->
             <!------------------------------------------------>
             <div class="block">
                 <!-- Button "Primary" without icon -->
-                <button data-btn="primary">
-                    <span class="mr-24"> Primary </span>
+                <button data-variant="primary">
+                  Primary
                 </button>
 
                 <!-- Button "Primary" without icon disabled -->
-                <button id="button" data-btn="primary">
-                    <span class="mr-24"> Primary </span>
-                </button>
-
-                <!-- Button "Primary" with icon -->
-                <button data-btn="primary">
-                    <span class="mr-24"> Primary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
-
-                <!-- Button "Primary" with icon disabled -->
-                <button data-btn="primary" disabled>
-                    <span class="mr-24"> Primary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
+                <button id="button" data-variant="primary" disabled>
+                    Primary
                 </button>
 
                 <!-- Button "Primary" icon -->
-                <button data-btn="primary">
-                    <div data-icon-plus="icon-plus">
+                <div tabindex="0" class="btn-icon" data-variant="primary">
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+                </div>
+
+                <!-- Button "Primary" icon disabled -->
+                <div class="btn-icon" data-variant="primary" disabled>
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+                </div>
+
+
+                <!-- Button "Primary" with icon -->
+                <button data-variant="primary">
+                  Primary
+                    <div data-icon="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -336,9 +307,10 @@
                     </div>
                 </button>
 
-                <!-- Button "Primary" icon  disabled-->
-                <button data-btn="primary" disabled>
-                    <div data-icon-plus="icon-plus">
+                <!-- Button "Primary" with icon disabled-->
+                <button data-variant="primary" disabled>
+                  Primary
+                    <div data-icon="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -362,35 +334,80 @@
             <!------------------------------------------------>
             <div class="block">
                 <!-- Button "Danger Primary" without icon -->
-                <button data-btn="danger-primary">
-                    <span class="mr-24"> Danger Primary </span>
-                    <div data-icon-plus="icon-plus"></div>
+                <button data-variant="danger-primary">
+                  Danger Primary
                 </button>
 
-                <!-- Button "Danger-Primary" with icon -->
-                <button data-btn="danger-primary">
-                    <span class="mr-24"> Danger Primary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
+                <!-- Button "Danger Primary" without icon disabled -->
+                <button id="button" data-variant="danger-primary" disabled>
+                  Danger Primary
                 </button>
 
                 <!-- Button "Danger-Primary" icon -->
-                <button data-btn="danger-primary">
-                    <div data-icon-plus="icon-plus">
+                <div tabindex="0" class="btn-icon" data-variant="danger-primary">
+                  <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Button "Danger-Primary" icon disabled -->
+                <div class="btn-icon" data-variant="danger-primary" disabled>
+                  <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Button "Danger-Primary" with icon -->
+                <button data-variant="danger-primary">
+                  Danger Primary
+                    <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                    </div>
+                </button>
+
+                <!-- Button "Danger-Primary" with icon disabled -->
+                <button data-variant="danger-primary" disabled>
+                  Danger-Primary
+                    <div data-icon="icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -413,261 +430,514 @@
             <!--               Button Secondary             -->
             <!------------------------------------------------>
             <div class="block">
-                <!-- Button "Secondary" without icon -->
-                <button data-btn="secondary">
-                    <span class="mr-24"> Secondary </span>
-                    <div data-icon-plus="icon-plus"></div>
-                </button>
+              <!-- Button "Secondary" without icon -->
+              <button data-variant="secondary">
+                Secondary
+              </button>
 
-                <!-- Button "Secondary" with icon -->
-                <button data-btn="secondary">
-                    <span class="mr-24"> Secondary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Secondary" without icon disabled -->
+              <button data-variant="secondary" disabled>
+                Secondary
+              </button>
 
-                <!-- Button "Secondary" icon -->
-                <button data-btn="secondary">
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Secondary" icon -->
+              <div tabindex="0" class="btn-icon" data-variant="secondary">
+                <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+              </div>
+
+              <!-- Button "Secondary" icon disabled -->
+              <div class="btn-icon" data-variant="secondary" disabled>
+                <div data-icon="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                  >
+                      <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                          fill="white"
+                      />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button "Secondary" with icon -->
+              <button data-variant="secondary">
+                Secondary
+                <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                </div>
+              </button>
+
+              <!-- Button "Secondary" with icon disabled -->
+              <button data-variant="secondary" disabled>
+                  Secondary
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
             </div>
 
             <!------------------------------------------------>
             <!--               Button Tertiary              -->
             <!------------------------------------------------>
             <div class="block">
-                <!-- Button "Tertiary" without icon -->
-                <button data-btn="tertiary">
-                    <span class="mr-24"> Tertiary </span>
-                    <div data-icon-plus="icon-plus"></div>
-                </button>
+              <!-- Button "Tertiary" without icon -->
+              <button data-variant="tertiary">
+                Tertiary
+              </button>
 
-                <!-- Button "Tertiary" with icon -->
-                <button data-btn="tertiary">
-                    <span class="mr-24"> Tertiary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Tertiary" without icon disabled -->
+              <button data-variant="tertiary" disabled>
+                Tertiary
+              </button>
 
-                <!-- Button "Tertiary" icon -->
-                <button data-btn="tertiary">
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Tertiary" icon -->
+              <div tabindex="0" class="btn-icon" data-variant="tertiary">
+                <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+              </div>
+
+              <!-- Button "Tertiary" icon disabled -->
+              <div class="btn-icon" data-variant="tertiary" disabled>
+                <div data-icon="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                  >
+                      <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                          fill="white"
+                      />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button "Tertiary" with icon -->
+              <button data-variant="tertiary">
+                Tertiary
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
+
+              <!-- Button "Tertiary" with icon disabled -->
+              <button data-variant="tertiary" disabled>
+                Tertiary
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
             </div>
 
             <!------------------------------------------------>
             <!--           Button Danger-Tertiary           -->
             <!------------------------------------------------>
             <div class="block">
-                <!-- Button "Danger-Tertiary" without icon -->
-                <button data-btn="danger-tertiary">
-                    <span class="mr-24"> Danger Tertiary </span>
-                    <div data-icon-plus="icon-plus"></div>
-                </button>
+              <!-- Button "Danger-Tertiary" without icon -->
+              <button data-variant="danger-tertiary">
+                Danger Tertiary
+              </button>
 
-                <!-- Button "Danger-Tertiary" with icon -->
-                <button data-btn="danger-tertiary">
-                    <span class="mr-24"> Danger Tertiary </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Danger-Tertiary" without icon disabled -->
+              <button data-variant="danger-tertiary" disabled>
+                Danger Tertiary
+              </button>
 
-                <!-- Button "Danger-Tertiary" icon -->
-                <button data-btn="danger-tertiary">
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Danger-Tertiary" icon -->
+              <div tabindex="0" class="btn-icon" data-variant="danger-tertiary">
+                <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+              </div>
+
+              <!-- Button "Danger-Tertiary" icon disabled -->
+              <div class="btn-icon" data-variant="danger-tertiary" disabled>
+                <div data-icon="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                  >
+                      <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                          fill="white"
+                      />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button "Danger-Tertiary" with icon -->
+              <button data-variant="danger-tertiary">
+                Danger Tertiary
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
+
+              <!-- Button "Danger-Tertiary" with icon disabled -->
+              <button data-variant="danger-tertiary" disabled>
+                Danger Tertiary
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
             </div>
 
             <!------------------------------------------------>
             <!--                Button Ghost                -->
             <!------------------------------------------------>
             <div class="block">
-                <!-- Button "Ghost" without icon -->
-                <button data-btn="ghost">
-                    <span class="mr-24"> Ghost </span>
-                    <div data-icon-plus="icon-plus"></div>
-                </button>
+              <!-- Button "Ghost" without icon -->
+              <button data-variant="ghost">
+                Ghost
+              </button>
 
-                <!-- Button "Ghost" with icon -->
-                <button data-btn="ghost">
-                    <span class="mr-24"> Ghost </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Ghost" without icon disabled -->
+              <button data-variant="ghost" disabled>
+                Ghost
+              </button>
 
-                <!-- Button "Ghost" icon -->
-                <button data-btn="ghost">
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Ghost" icon -->
+              <div tabindex="0" class="btn-icon" data-variant="ghost">
+                <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+              </div>
+
+              <!-- Button "Ghost" icon disabled -->
+              <div class="btn-icon" data-variant="ghost" disabled>
+                <div data-icon="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                  >
+                      <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                          fill="white"
+                      />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button "Ghost" with icon -->
+              <button data-variant="ghost">
+                Ghost
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
+
+              <!-- Button "Ghost" with icon disabled -->
+              <button data-variant="ghost" disabled>
+                Ghost
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
             </div>
 
             <!------------------------------------------------>
             <!--            Button Danger-Ghost             -->
             <!------------------------------------------------>
             <div class="block">
-                <!-- Button "Danger-Ghost" without icon -->
-                <button data-btn="danger-ghost">
-                    <span class="mr-24"> Danger Ghost </span>
-                    <div data-icon-plus="icon-plus"></div>
-                </button>
+              <!-- Button "Danger-Ghost" without icon -->
+              <button data-variant="danger-ghost">
+                Danger Ghost
+              </button>
 
-                <!-- Button "Danger-Ghost" with icon -->
-                <button data-btn="danger-ghost">
-                    <span class="mr-24"> Danger Ghost </span>
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Danger-Ghost" without icon disabled -->
+              <button data-variant="danger-ghost" disabled>
+                Danger Ghost
+              </button>
 
-                <!-- Button "Danger-Ghost" icon -->
-                <button data-btn="danger-ghost">
-                    <div data-icon-plus="icon-plus">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div>
-                </button>
+              <!-- Button "Danger-Ghost" icon -->
+              <div tabindex="0" class="btn-icon" data-variant="danger-ghost">
+                <div data-icon="icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+              </div>
+
+              <!-- Button "Danger-Ghost" icon disabled -->
+              <div class="btn-icon" data-variant="danger-ghost" disabled>
+                <div data-icon="icon">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                  >
+                      <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                          fill="white"
+                      />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Button "Danger-Ghost" with icon -->
+              <button data-variant="danger-ghost">
+                Danger Ghost
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
+
+              <!-- Button "Danger-Ghost" with icon disabled -->
+              <button data-variant="danger-ghost" disabled>
+                Danger Ghost
+                  <div data-icon="icon">
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                      >
+                          <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.5 7.5V3.5H7.5V7.5H3.5V8.5H7.5V12.5H8.5V8.5H12.5V7.5H8.5Z"
+                              fill="white"
+                          />
+                      </svg>
+                  </div>
+              </button>
             </div>
+
+          <!-- таблица  -->
+          <h3>Table</h3>
+          <br>
+          <div class="block">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Variation</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Number of characters</td>
+                    <td id="answer1"></td>
+                  </tr>
+                  <tr>
+                    <td>Lower case</td>
+                    <td id="answer2"></td>
+                  </tr>
+                  <tr>
+                    <td>Upper case</td>
+                    <td id="answer3"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
         </main>
 
         <script src="src/js/theme-switcher.js"></script>
