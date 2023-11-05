@@ -5,6 +5,7 @@
 @import '../css/blocks/forms.css';
 @import '../css/blocks/header.css';
 @import '../css/blocks/modal.css';
+@import '../css/blocks/tasks.css';
 
 /* подключение слайдера */
 @import 'swiper/css/bundle';
