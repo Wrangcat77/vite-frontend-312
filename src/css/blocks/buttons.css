@@ -170,7 +170,6 @@ a.active {
   background-color: var(--background-background);
   border: 0.2rem solid var(--button-button-tertiary);
   color: var(--button-button-tertiary);
-  cursor: pointer;
 }
 
 [data-variant='tertiary'] path {
