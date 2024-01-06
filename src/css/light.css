@@ -13,8 +13,10 @@
   --cds-blue-500: #0353e9;
 
   /* grey color */
+  --cds-grey-300: #b7b7b7;
   --cds-grey-400: #525252;
   --cds-grey-500: #8d8d8d;
+  --cds-grey-600: #313131;
 
   /* Background */
   --background-background: #fff;
@@ -22,6 +24,7 @@
 
   /* Text */
   --text-text-primary: #161616;
+  --text-text-secondary: #464646;
   --text-text-tertiary: #fff;
   --text-text-on-color: #fff; /* Text on interactive colors; Text on button colors */
   --text-text-on-color-disabled: #8d8d8d; /* Disabled color for --text-text-on-color */
